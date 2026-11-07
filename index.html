@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Подготовка к защите SIS3: десять лабораторных, карточки, тесты, интерактивные ACL и понятные объяснения криптографии и NetFlow.">
+  <meta name="theme-color" content="#132c37">
+  <title>SIS3 · Подготовка к защите</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Перейти к содержанию</a>
+  <aside class="sidebar" aria-label="Навигация по лабораторным">
+    <a class="brand" href="#home" aria-label="SIS3, главная"><span class="brand-icon">S<span>3</span></span><span>Cyber Security<small>ЛАБОРАТОРНЫЕ · SIS3</small></span></a>
+    <div class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Номер, тема, термин…" aria-label="Поиск лабораторных"></div>
+    <nav id="lab-nav" aria-label="Лабораторные"></nav>
+    <div class="side-bottom">
+      <div class="progress-label"><span>Прогресс изучения</span><b id="learned-count">0 / 10</b></div>
+      <div class="progress-track" aria-hidden="true"><span id="learned-bar"></span></div>
+      <p>Отметки и результаты тестов хранятся только в этом браузере.</p>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span id="breadcrumb">Твой план подготовки</span><div><button class="quiet" id="print" title="Печать текущей страницы">Печать</button><span class="offline-tag"><i></i> Работает без интернета</span></div></header>
+    <main id="content" tabindex="-1"></main>
+    <footer>Учебные объяснения и симуляции · Практика и прогресс изучения отмечены отдельно</footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p>Включи JavaScript для карточек, тестов и интерактивных примеров. Полные конспекты также находятся в папке out каждой лабораторной.</p></noscript>
+  <script src="lab-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
